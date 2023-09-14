@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seilaoque</title>
+    <script>
+        function validarDados(){
+            if( document.getElementById("nome").value == ""){
+                alert("Campo 'Nome' está vazio");
+            }
+            if( document.getElementById("endereco").value == ""){
+                alert("Campo 'Endereço' está vazio");
+            }
+            if( document.getElementById("bairro").value == ""){
+                alert("Campo 'Bairro' está vazio");
+            }
+            if( document.getElementById("cep").value == ""){
+                alert("Campo 'CEP' está vazio");
+            }
+            if( document.getElementById("cidade").value == ""){
+                alert("Campo 'Cidade' está vazio")
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="cadastrar" id="cadastrar" method="POST" action="">
+        Nome: <input type="text" name="nome" id="Nome"><br><br>
+        Endereço: <input type="text" name="endereco" id="Endereco"><br><br>
+        Bairro: <input type="text" name="bairro" id="Bairro"><br><br>
+        CEP: <input type="text" name="cep" id="Cep"><br><br>
+        Cidade: <input type="text" name="cidade" id="Cidade"><br><br>
+        <button value="Cadastrar" name="Cadastrar" id="Cadastrar" onclick="validarDados()">Cadastrar</button><br><br>
+    </form>
+</body>
+</html>
